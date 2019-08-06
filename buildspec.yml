@@ -1,6 +1,8 @@
 version: 0.2
 phases:
   install:
+    runtime-versions:
+      python: 3.7
     commands:
       - aws cloudformation package --template-file samTemplate.yaml --s3-bucket crosstalk-lambda-artifacts --output-template-file outputSamTemplate.yaml
 artifacts:
