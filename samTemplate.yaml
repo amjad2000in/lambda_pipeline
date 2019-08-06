@@ -10,7 +10,7 @@ Resources:
       CodeUri: ./
       Description: 'Lambda function for CD Demo'
       MemorySize: 128
-      Timeout: 30
+      Timeout: 35
       Role: 'arn:aws:iam::584376755109:role/MyLambdaRole'
       Events:
         getAZsAPI:
